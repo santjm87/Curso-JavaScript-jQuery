@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery: Getters y Setters</title>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script>
+		$(document).on('ready', function () {
+			$("#parrafo").html("<strong>Hola jQuery</strong>");	
+
+			//este metodo sirve para OBTENER el id
+			var clase=$("#prueba").attr("id");
+			alert(clase);
+
+			//Este metodo ASIGNA un valor
+			$("#prueba").attr("class", "ejemplo")
+
+		});
+	</script>
+</head>
+<body>
+	<p id="parrafo"></p>
+	<div id="prueba"></div>
+</body>
+</html>
